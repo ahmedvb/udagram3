@@ -2,7 +2,7 @@ set -x
 set -e
 
 eb init server --platform node.js --region us-east-1
-eb create --sample server-env
+#eb create --sample server-env
 eb use server-env
 
 eb setenv AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID &&
